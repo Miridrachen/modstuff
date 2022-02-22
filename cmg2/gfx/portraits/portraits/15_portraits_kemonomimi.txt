@@ -1,0 +1,35 @@
+##############################################################
+###	PORTRAITS SETTINGS
+###
+### Which portraits are used is set in
+### common\species_classes\00_species_classes.txt
+###
+###	This file configures how portraits and planet backgrounds are built.
+###	Default position orientation is lower left.
+##############################################################
+
+############################
+portraits = {
+
+		arbiter = { texturefile = "gfx/models/awoo/awoo_arbiter.dds"}
+		general =  { texturefile = "gfx/models/awoo/awoo_general.dds" }
+		honourguard = { texturefile = "gfx/models/awoo/awoo_honorG.dds" }
+		major = { texturefile = "gfx/models/awoo/awoo_major.dds" }
+		minor = { texturefile = "gfx/models/awoo/awoo_minor.dds" }
+		prophet1 = { texturefile = "gfx/models/awoo/awoo_prophet1.dds" }
+		sc1 = { texturefile = "gfx/models/awoo/awoo_sci1.dds" }
+		shipmaster = { texturefile = "gfx/models/awoo/awoo_shipmaster.dds" }
+		specops = { texturefile = "gfx/models/awoo/awoo_specops.dds" }
+		zealot = { texturefile = "gfx/models/awoo/awoo_zealot.dds" }
+}
+
+portrait_groups = {
+		Kitsune = {
+		default = arbiter
+		game_setup = { set = { portraits = { arbiter general honourguard major minor prophet1 sc1 shipmaster specops zealot}}}		
+		species = { set = { portraits = { arbiter general honourguard major minor prophet1 sc1 shipmaster specops zealot}}}	
+		pop = { set = { portraits = { arbiter general honourguard major minor prophet1 sc1 shipmaster specops zealot}}}	
+		leader = { set = { portraits = { general honourguard sc1 shipmaster specops }}}		
+		ruler = { set = { portraits = { arbiter prophet1 }}}
+		}
+		}
