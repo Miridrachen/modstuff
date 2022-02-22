@@ -1,0 +1,35 @@
+# species_potential_add = {}
+# show the trait to add to species when genemodding or randomizing traits.
+# Scopes are this = species, from = country performing the modification.
+# default = always=yes
+
+# species_possible_remove = {}
+# allow to remove the trait when genemodding.
+# Scopes are this = species, from = country performing the modification.
+# default = always=yes
+trait_kemonomimi = {
+	cost = 0
+	potential_crossbreeding_chance = 0
+	sorting_priority = 20
+
+	initial = yes
+	randomized = no
+	modification = no
+	forced_happiness = no
+	immortal_leaders = no
+	
+	ai_weight = {
+		weight = 0
+	}
+	
+	icon = "gfx/interface/icons/traits/trait_lithoid.dds"
+
+	allowed_archetypes = { KEMONOMIMI BIOLOGICAL }
+	modifier = {
+		pop_housing_usage_mult = 0.2
+		planet_jobs_food_produces_mult = 0.05
+		leader_age = 50
+		}
+	opposites = { "trait_enduring" "trait_venerable" "trait_fleeting" }
+	}
+}
